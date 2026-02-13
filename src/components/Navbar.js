@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Menu, X, ShoppingCart } from "lucide-react"; // Using lucide-react for icons
+import logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
             <span className='text-2xl font-bold text-primary1'>pharmacy</span>
           </div> */}
           <div className='w-48'>
-            <img src='/publicImages/logo.png' alt='Logo' />
+            <img src={logo} alt='TFpharmacy Logo' />
           </div>
 
           {/* Desktop Navigation (Spread) */}
